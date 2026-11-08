@@ -35,3 +35,19 @@ produtos = list(dic_produtos.keys())
 print(produtos)
 precos = list(dic_produtos.values())
 print(precos)
+
+# contagem de itens no dicionarios
+qtde = len(dic_produtos)
+
+dic_produtos = {"ipad": 7000, "iphone": 5000, "airpod": 2000, "macbook": 12000}
+
+produto_buscado = input("Digite o nome do produto:")
+produto_buscado = produto_buscado.strip()
+produto_buscado = produto_buscado.lower()
+
+if produto_buscado in dic_produtos:
+    preco = dic_produtos[produto_buscado]
+    print("Produto encontrado")
+    print(f"Produto: {produto_buscado}, Preco: {preco}") 
+else:
+    print("Produto não encontrado")
